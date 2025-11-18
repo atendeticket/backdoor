@@ -1,4 +1,4 @@
-import { Sequelize, Model, DataTypes, BuildOptions, Op } from 'sequelize';
+import { Sequelize, Model, DataTypes, BuildOptions } from 'sequelize';
 import { isObject } from 'lodash';
 
 interface WhatsAppProviderAttributes {
