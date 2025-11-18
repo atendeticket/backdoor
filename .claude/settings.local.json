@@ -13,7 +13,10 @@
       "Bash(npm install:*)",
       "Bash(chmod:*)",
       "Bash(sudo:*)",
-      "Bash(./criar_versao_protegida.sh:*)"
+      "Bash(./criar_versao_protegida.sh:*)",
+      "Bash(apt:*)",
+      "Bash(apt install:*)",
+      "Bash(wget:*)"
     ],
     "deny": [],
     "ask": []
