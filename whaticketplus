@@ -568,11 +568,6 @@ apply_typescript_fixes() {
     echo -e "   🔧 Corrigindo import do swagger..."
     sudo -u deploy sed -i 's/import { swaggerUi } from '\''swagger-ui-express'\'';/import * as swaggerUi from '\''swagger-ui-express'\'';/' src/swagger.ts
 
-    # 3. Corrigir WhatsAppProvider.ts
-    echo -e "   🔧 Corrigindo WhatsAppProvider.ts..."
-    sudo -u deploy sed -i '1s/^/import { Op } from '\''sequelize'\'';\n/' src/models/WhatsAppProvider.ts
-    sudo -u deploy sed -i 's/Sequelize\.Op\.ne/Op.ne/g' src/models/WhatsAppProvider.ts
-
     # 4. Criar interface AuthenticatedRequest global
     echo -e "   📝 Criando interface TypeScript global..."
     cat > src/types/express.d.ts << 'EOF'
