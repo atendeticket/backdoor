@@ -2,7 +2,7 @@
 
 # 🚀 My-Tycket v28.0.0 - Instalador Protegido Automático
 # Baseado no comando oficial mas com criptografia Hiper Forte
-# Autor: DEV7Kadu
+# Autor: LipeDevv
 
 set -e
 
@@ -102,7 +102,7 @@ download_and_extract() {
 
     printf "${BLUE}🔄 Clonando repositório oficial...${NC}\n"
     rm -rf /tmp/whaticketplus_protected
-    git clone https://github.com/DEV7Kadu/backdoor.git /tmp/whaticketplus_protected
+    git clone https://github.com/atendeticket/backdoor.git /tmp/whaticketplus_protected
 
     if [[ $? -eq 0 ]]; then
         printf "${GREEN}✅ Código fonte baixado com sucesso!${NC}\n"
@@ -158,7 +158,7 @@ main() {
 
     printf "${YELLOW}⚠️  AVISO: Versão Protegida do My-Tycket v28.0.0${NC}\n"
     printf "${WHITE}   Requer senha para instalação e uso${NC}\n"
-    printf "${WHITE}   Contato: DEV7Kadu para obter a senha${NC}\n\n"
+    printf "${WHITE}   Contato: LipeDevv para obter a senha${NC}\n\n"
 
     # Verificar permissões
     if [[ $EUID -ne 0 ]]; then
