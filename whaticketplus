@@ -2,7 +2,7 @@
 
 # My-Tycket v28 - Instalador Automático Completo
 # Compatível com Ubuntu 20.04, 22.04 e 24.04 LTS
-# Autor: DEV7Kadu
+# Autor: LipeDevv
 # Versão: 3.0 - Script Modular Avançado
 
 set -e  # Parar em caso de erro
@@ -500,7 +500,7 @@ download_code() {
     fi
 
     # Clonar repositório
-    git clone https://github.com/DEV7Kadu/backdoor.git whaticketplus
+    git clone https://github.com/atendeticket/backdoor.git whaticketplus
 
     # Ajustar permissões
     chown -R deploy:deploy /home/deploy/whaticketplus
@@ -1669,7 +1669,7 @@ detect_git_repository() {
     fi
 
     # Se não detectou, usar padrão
-    GIT_REPO="https://github.com/DEV7Kadu/backdoor.git"
+    GIT_REPO="https://github.com/atendeticket/backdoor.git"
     return 0
 }
 
@@ -1762,7 +1762,7 @@ collect_config() {
     echo -e "   📧 Email SSL: ${CYAN}${SSL_EMAIL}${NC}"
 
     # Mostrar repositório Git só se for diferente do padrão
-    if [[ "$GIT_REPO" != "https://github.com/DEV7Kadu/backdoor.git" ]]; then
+    if [[ "$GIT_REPO" != "https://github.com/atendeticket/backdoor.git" ]]; then
         echo -e "   📂 Repositório: ${CYAN}${GIT_REPO}${NC}"
     fi
     echo ""
