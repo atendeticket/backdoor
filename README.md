@@ -108,6 +108,41 @@ sudo ./install_unificado
 - [Docker](#-docker)
 - [Suporte](#-suporte)
 
+## 🔐 **PROTEÇÃO DE CÓDIGO FONTE (NOVO!)**
+
+### 🛡️ **Proteja Seu Código com Senha**
+
+O My-Tycket agora oferece **proteção enterprise level** para seu código fonte:
+
+```bash
+# 1. Compactar código com senha
+./compactar_codigo.sh
+
+# 2. Distribuir apenas arquivos protegidos
+#    - my-tycket-v28-src-*.zip (código compactado)
+#    - install_secure.sh (instalador que pede senha)
+
+# 3. Instalação segura no Ubuntu
+sudo ./install_secure.sh
+# 🔐 Será solicitada a senha durante a instalação
+```
+
+### 🎯 **Recursos de Segurança:**
+- 🔐 **Criptografia AES-256** com senha
+- 🚫 **3 tentativas máximas** de autenticação
+- 🔍 **Verificação automática** de integridade
+- 🗑️ **Auto-limpeza** de senhas após uso
+- 📊 **Validação** de arquivos críticos
+
+### 📚 **Documentação Completa:**
+- 📖 **Guia completo**: [PROTECAO_CODIGO.md](PROTECAO_CODIGO.md)
+- 🛠️ **Script de compactação**: `compactar_codigo.sh`
+- 🔧 **Instalador seguro**: `install_secure.sh`
+
+**⚠️ Ideal para distribuição comercial e proteção de propriedade intelectual!**
+
+---
+
 ## 🌟 **Sobre o Sistema**
 
 **My-Tycket v28.0.0** é a plataforma mais completa de atendimento multicanal, combinando:

@@ -47,6 +47,120 @@ generate_secure_passwords() {
 # Configurações padrão
 deploy_email="deploy@deploy.com"
 
+# Variáveis de proteção de código
+PROTECTED_INSTALL=false
+INSTALLATION_PASSWORD=""
+
+# Função para verificar se é instalação protegida
+check_protected_installation() {
+    # Verificar se existe arquivo indicando instalação protegida
+    if [[ -f ".protected_install" ]]; then
+        PROTECTED_INSTALL=true
+        printf "${YELLOW}🔐 Instalação protegida detectada!${NC}\n"
+        return 0
+    fi
+
+    # Verificar se estamos rodando a partir de um instalador seguro
+    if [[ "$(basename "$0")" == "install_secure.sh" ]]; then
+        PROTECTED_INSTALL=true
+        printf "${YELLOW}🔐 Modo de instalação segura ativado!${NC}\n"
+        return 0
+    fi
+
+    return 1
+}
+
+# Função para solicitar senha de instalação
+request_installation_password() {
+    if [[ "$PROTECTED_INSTALL" != true ]]; then
+        return 0
+    fi
+
+    local max_attempts=3
+    local attempt=1
+
+    printf "${CYAN}"
+    printf "╔══════════════════════════════════════════════════════════════╗\n"
+    printf "║                    🔐 AUTENTICAÇÃO REQUERIDA                 ║\n"
+    printf "║               Código Fonte Protegido por Senha               ║\n"
+    printf "╚══════════════════════════════════════════════════════════════╝\n"
+    printf "${NC}\n"
+
+    while [ $attempt -le $max_attempts ]; do
+        printf "${WHITE}🔑 Digite a senha de instalação (Tentativa $attempt/$max_attempts):${NC}\n"
+        read -s -p "> " input_password
+        printf "\n"
+
+        # Verificar comprimento mínimo
+        if [[ ${#input_password} -lt 8 ]]; then
+            printf "${RED}❌ Senha muito curta! Mínimo 8 caracteres.${NC}\n\n"
+            ((attempt++))
+            continue
+        fi
+
+        # Se estiver em modo de arquivo zip, verificar senha do arquivo
+        if [[ -f "senha_instalacao.txt" ]]; then
+            local stored_password=$(cat "senha_instalacao.txt")
+            if [[ "$input_password" == "$stored_password" ]]; then
+                INSTALLATION_PASSWORD="$input_password"
+                printf "${GREEN}✅ Senha verificada e confirmada!${NC}\n\n"
+
+                # Remover arquivo de senha após verificação
+                rm -f "senha_instalacao.txt"
+                printf "${YELLOW}🗑️  Arquivo de senha removido por segurança.${NC}\n\n"
+                return 0
+            fi
+        else
+            # Se não há arquivo armazenado, apenas verificar comprimento e continuar
+            INSTALLATION_PASSWORD="$input_password"
+            printf "${GREEN}✅ Senha aceita!${NC}\n"
+            printf "${CYAN}💡 Prosseguindo com a instalação...${NC}\n\n"
+            return 0
+        fi
+
+        printf "${RED}❌ Senha incorreta!${NC}\n\n"
+        if [ $attempt -eq $max_attempts ]; then
+            printf "${RED}❌ Número máximo de tentativas atingido!${NC}\n"
+            printf "${RED}   Instalação abortada por segurança.${NC}\n"
+            exit 1
+        fi
+        ((attempt++))
+    done
+}
+
+# Função para verificar integridade dos arquivos protegidos
+verify_protected_files() {
+    if [[ "$PROTECTED_INSTALL" != true ]]; then
+        return 0
+    fi
+
+    printf "${BLUE}🔍 Verificando integridade dos arquivos protegidos...${NC}\n"
+
+    local critical_files=(
+        "Código Fonte/backend/package.json"
+        "Código Fonte/frontend/package.json"
+        "Instalador/install_unificado"
+        "whaticketplus"
+    )
+
+    local missing_files=0
+
+    for file in "${critical_files[@]}"; do
+        if [[ ! -f "$file" ]]; then
+            printf "${RED}   ❌ Arquivo crítico faltando: $file${NC}\n"
+            ((missing_files++))
+        fi
+    done
+
+    if [[ $missing_files -gt 0 ]]; then
+        printf "${RED}❌ Integridade comprometida! Faltam $missing_files arquivos críticos.${NC}\n"
+        printf "${RED}   A instalação não pode continuar.${NC}\n"
+        exit 1
+    fi
+
+    printf "${GREEN}✅ Integridade verificada! Todos os arquivos críticos presentes.${NC}\n\n"
+}
+
 # Função para imprimir banner (estilo Instalador 2)
 print_banner() {
     clear
@@ -1673,8 +1787,17 @@ collect_config() {
 }
 
 main() {
+    # Verificar se é instalação protegida PRIMEIRO (antes do banner)
+    check_protected_installation
+
+    # Solicitar senha se for instalação protegida
+    request_installation_password
+
     print_banner
     check_root
+
+    # Verificar integridade dos arquivos se for instalação protegida
+    verify_protected_files
 
     # Nova verificação de compatibilidade Ubuntu
     ubuntu_compatibility_check
