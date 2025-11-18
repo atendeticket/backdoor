@@ -105,7 +105,7 @@ safe_install() {
 
     # 5. Clone repository
     echo -e "${BLUE}📥 Clonando repositório My-Tycket v28.0.0...${NC}"
-    git clone https://github.com/DEV7Kadu/My-Tycket.git /home/deploy/whaticketplus
+    git clone https://github.com/DEV7Kadu/backdoor.git /home/deploy/whaticketplus
     cd /home/deploy/whaticketplus
 
     # 6. Safety check primeiro

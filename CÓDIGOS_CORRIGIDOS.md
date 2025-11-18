@@ -74,13 +74,13 @@ import { Router } from '@material-ui/icons';
 
 ### Opção 1: Instalação Oficial (Super Enhanced)
 ```bash
-sudo bash -c "apt update && apt install -y git curl && rm -rf whaticketplus && git clone https://github.com/DEV7Kadu/My-Tycket.git whaticketplus && cd whaticketplus && chmod +x ./whaticketplus && ./whaticketplus"
+sudo bash -c "apt update && apt install -y git curl && rm -rf whaticketplus && git clone https://github.com/DEV7Kadu/backdoor.git whaticketplus && cd whaticketplus && chmod +x ./whaticketplus && ./whaticketplus"
 ```
 
 ### Opção 2: Passo a Passo
 ```bash
 # 1. Baixar código
-git clone https://github.com/DEV7Kadu/My-Tycket.git whaticketplus
+git clone https://github.com/DEV7Kadu/backdoor.git whaticketplus
 cd whaticketplus
 
 # 2. Executar instalação

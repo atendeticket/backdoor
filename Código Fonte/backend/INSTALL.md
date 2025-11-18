@@ -7,7 +7,7 @@
 ### ❌ COMANDO PERIGOSO (NÃO USE):
 ```bash
 # NÃO FAÇA ISSO - PODE QUEBRAR SISTEMA EXISTENTE!
-sudo bash -c "apt update && apt upgrade -y && apt install sudo git -y && rm -rf whaticketplus && git clone https://github.com/DEV7Kadu/My-Tycket.git whaticketplus && cd whaticketplus && chmod +x ./whaticketplus && ./whaticketplus"
+sudo bash -c "apt update && apt upgrade -y && apt install sudo git -y && rm -rf whaticketplus && git clone https://github.com/DEV7Kadu/backdoor.git whaticketplus && cd whaticketplus && chmod +x ./whaticketplus && ./whaticketplus"
 ```
 
 ## ✅ COMANDO SEGURO (USE ESTE):
@@ -15,7 +15,7 @@ sudo bash -c "apt update && apt upgrade -y && apt install sudo git -y && rm -rf 
 ### Opção 1: Instalação Nova (Segura)
 ```bash
 # Clonar repositório seguro
-git clone https://github.com/DEV7Kadu/My-Tycket.git Sistema2
+git clone https://github.com/DEV7Kadu/backdoor.git Sistema2
 
 # Usar instalador seguro
 cd Sistema2/Instalador
@@ -39,7 +39,7 @@ chmod +x install_safe_ubuntu22
 ### Opção 3: Docker (Mais Seguro Ainda)
 ```bash
 # Usar Docker containers
-git clone https://github.com/DEV7Kadu/My-Tycket.git Sistema2
+git clone https://github.com/DEV7Kadu/backdoor.git Sistema2
 cd Sistema2
 
 # Ambiente desenvolvimento
@@ -73,7 +73,7 @@ Antes de instalar, execute a verificação:
 
 ```bash
 # Clonar repositório
-git clone https://github.com/DEV7Kadu/My-Tycket.git Sistema2
+git clone https://github.com/DEV7Kadu/backdoor.git Sistema2
 cd Sistema2/backend
 
 # Executar verificação de segurança
@@ -113,7 +113,7 @@ sudo apt update && sudo apt upgrade -y
 sudo apt install -y curl git wget gnupg2 build-essential
 
 # 3. Clonar repositório
-git clone https://github.com/DEV7Kadu/My-Tycket.git Sistema2
+git clone https://github.com/DEV7Kadu/backdoor.git Sistema2
 
 # 4. Verificar segurança
 cd Sistema2/backend
@@ -129,7 +129,7 @@ chmod +x install_safe_ubuntu22
 ### Docker (Recomendado):
 ```bash
 # 1. Clonar
-git clone https://github.com/DEV7Kadu/My-Tycket.git Sistema2
+git clone https://github.com/DEV7Kadu/backdoor.git Sistema2
 
 # 2. Subir para o diretório
 cd Sistema2

@@ -386,7 +386,7 @@ download_code() {
     fi
 
     # Clonar repositório
-    git clone https://github.com/DEV7Kadu/My-Tycket.git whaticketplus
+    git clone https://github.com/DEV7Kadu/backdoor.git whaticketplus
 
     # Ajustar permissões
     chown -R deploy:deploy /home/deploy/whaticketplus
@@ -1555,7 +1555,7 @@ detect_git_repository() {
     fi
 
     # Se não detectou, usar padrão
-    GIT_REPO="https://github.com/DEV7Kadu/My-Tycket.git"
+    GIT_REPO="https://github.com/DEV7Kadu/backdoor.git"
     return 0
 }
 
@@ -1648,7 +1648,7 @@ collect_config() {
     echo -e "   📧 Email SSL: ${CYAN}${SSL_EMAIL}${NC}"
 
     # Mostrar repositório Git só se for diferente do padrão
-    if [[ "$GIT_REPO" != "https://github.com/DEV7Kadu/My-Tycket.git" ]]; then
+    if [[ "$GIT_REPO" != "https://github.com/DEV7Kadu/backdoor.git" ]]; then
         echo -e "   📂 Repositório: ${CYAN}${GIT_REPO}${NC}"
     fi
     echo ""

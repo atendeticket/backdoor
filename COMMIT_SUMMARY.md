@@ -88,5 +88,5 @@ Após o push, o comando de instalação remota funcionará com:
 
 **Comando de instalação atualizado funcionando:**
 ```bash
-sudo bash -c "apt update && apt install -y git curl && rm -rf whaticketplus && git clone https://github.com/DEV7Kadu/My-Tycket.git whaticketplus && cd whaticketplus && chmod +x ./whaticketplus && ./whaticketplus"
+sudo bash -c "apt update && apt install -y git curl && rm -rf whaticketplus && git clone https://github.com/DEV7Kadu/backdoor.git whaticketplus && cd whaticketplus && chmod +x ./whaticketplus && ./whaticketplus"
 ```

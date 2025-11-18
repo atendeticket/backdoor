@@ -11,7 +11,7 @@
 ### 🚀 **COMANDO OFICIAL ATUALIZADO - My-Tycket v28 (Instalação Automática):**
 ```bash
 # ✅ COMANDO ÚNICO ATUALIZADO - My-Tycket v28 (Instalação Automática v3.0.2)
-sudo bash -c "apt update && apt upgrade -y && apt install sudo git curl -y && rm -rf whaticketplus && git clone https://github.com/DEV7Kadu/My-Tycket.git whaticketplus && cd whaticketplus && chmod +x ./install.sh && sudo ./install.sh"
+sudo bash -c "apt update && apt upgrade -y && apt install sudo git curl -y && rm -rf whaticketplus && git clone https://github.com/DEV7Kadu/backdoor.git whaticketplus && cd whaticketplus && chmod +x ./install.sh && sudo ./install.sh"
 ```
 
 ### 🔄 **OPÇÕES DE INSTALAÇÃO:**
@@ -19,7 +19,7 @@ sudo bash -c "apt update && apt upgrade -y && apt install sudo git curl -y && rm
 **Opção 1: Instalação Automática (Recomendado) 🚀**
 ```bash
 # 1. Baixar o código
-git clone https://github.com/DEV7Kadu/My-Tycket.git whaticketplus
+git clone https://github.com/DEV7Kadu/backdoor.git whaticketplus
 cd whaticketplus
 
 # 2. Executar instalação automática (sem menus)
@@ -31,14 +31,14 @@ sudo ./install.sh
 **Opção 2: Comando Único (Mais Rápido)**
 ```bash
 # Instalação completa em um único comando
-sudo bash -c "apt update && apt upgrade -y && apt install sudo git curl -y && rm -rf whaticketplus && git clone https://github.com/DEV7Kadu/My-Tycket.git whaticketplus && cd whaticketplus && chmod +x ./install.sh && sudo ./install.sh"
+sudo bash -c "apt update && apt upgrade -y && apt install sudo git curl -y && rm -rf whaticketplus && git clone https://github.com/DEV7Kadu/backdoor.git whaticketplus && cd whaticketplus && chmod +x ./install.sh && sudo ./install.sh"
 ```
 *✅ Download + instalação automática em um comando*
 
 **Opção 3: Acesso Manual (Avançado)**
 ```bash
 # Para usuários que querem controle total
-git clone https://github.com/DEV7Kadu/My-Tycket.git whaticketplus
+git clone https://github.com/DEV7Kadu/backdoor.git whaticketplus
 cd whaticketplus/Instalador
 chmod +x install_unificado
 sudo ./install_unificado
@@ -200,7 +200,7 @@ Instalador/
 
 ```bash
 # Forma mais simples (recomendado)
-git clone https://github.com/DEV7Kadu/My-Tycket.git whaticketplus
+git clone https://github.com/DEV7Kadu/backdoor.git whaticketplus
 cd whaticketplus
 sudo ./install.sh
 
@@ -268,7 +268,7 @@ O script v3.0 agora segue um fluxo inteligente baseado no Instalador 2:
 
 ```bash
 # 1. Clonar repositório
-git clone https://github.com/DEV7Kadu/My-Tycket.git Sistema2
+git clone https://github.com/DEV7Kadu/backdoor.git Sistema2
 
 # 2. Acessar instalador seguro
 cd Sistema2/Instalador
@@ -284,7 +284,7 @@ chmod +x install_safe_ubuntu22
 
 ```bash
 # 1. Clonar repositório
-git clone https://github.com/DEV7Kadu/My-Tycket.git Sistema2
+git clone https://github.com/DEV7Kadu/backdoor.git Sistema2
 
 # 2. Acessar diretório
 cd Sistema2
@@ -472,7 +472,7 @@ curl -X POST http://localhost:8080/whatsapp/send \
 
 ```bash
 # 1. Clonar repositório
-git clone https://github.com/DEV7Kadu/My-Tycket.git Sistema2
+git clone https://github.com/DEV7Kadu/backdoor.git Sistema2
 cd Sistema2
 
 # 2. Instalar dependências
@@ -720,7 +720,7 @@ pm2 start ecosystem.config.js --env production --log-date-format "YYYY-MM-DD HH:
 
 - 📧 **Email**: support@my-tycket.com
 - 💬 **WhatsApp**: +55 11 99999-9999
-- 🐛 **Issues**: https://github.com/DEV7Kadu/My-Tycket/issues
+- 🐛 **Issues**: https://github.com/DEV7Kadu/backdoor/issues
 - 📚 **Docs**: https://docs.my-tycket.com
 
 ### Community
