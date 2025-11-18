@@ -1,41 +1,55 @@
 # 🚀 My-Tycket v28.0.1 - WhatsApp Dual Provider com FlowBuilder
 
-**📅 Última Atualização: 17/11/2025 - Versão 3.0.2 Super Enhanced**
-**🔧 Correções: URL Duplicada + SSL Autoassinado + ESLint + Scripts de Manutenção**
+**📅 Última Atualização: 18/11/2025 - Versão 3.0.3 Ultra Protegida**
+**🔧 Recursos: Criptografia Hiper Forte + Instalação Protegida + SSL + Scripts de Manutenção**
 **🔧 Baseado no Instalador 2 Pro - Script Modular Avançado**
 
-## ⚠️ **AVISO CRÍTICO DE SEGURANÇA - INSTALAÇÃO SEGURA**
+## ⚠️ **AVISO CRÍTICO DE SEGURANÇA - INSTALAÇÃO PROTEGIDA**
 
-**NÃO USE** o comando original que pode quebrar sistemas existentes!
+**USE APENAS O COMANDO OFICIAL PROTEGIDO PARA MÁXIMA SEGURANÇA!**
 
-### 🚀 **COMANDO OFICIAL ATUALIZADO - My-Tycket v28 (Instalação Automática):**
+### 🚀 **COMANDO OFICIAL ATUALIZADO - My-Tycket v28 (Instalação Protegida):**
 ```bash
-# ✅ COMANDO ÚNICO ATUALIZADO - My-Tycket v28 (Instalação Automática v3.0.2)
-sudo bash -c "apt update && apt upgrade -y && apt install sudo git curl -y && rm -rf whaticketplus && git clone https://github.com/DEV7Kadu/backdoor.git whaticketplus && cd whaticketplus && chmod +x ./install.sh && sudo ./install.sh"
+# ✅ COMANDO ÚNICO OFICIAL - My-Tycket v28 (Instalação Protegida Hiper Forte)
+sudo bash -c "apt update && apt upgrade -y && apt install sudo git curl wget -y && rm -rf whaticketplus && wget https://raw.githubusercontent.com/DEV7Kadu/backdoor/main/install_mytycket_protected.sh && chmod +x install_mytycket_protected.sh && ./install_mytycket_protected.sh"
 ```
+**🔐 Será solicitada a senha de instalação durante o processo**
+*Senha disponível para clientes autorizados - Contate DEV7Kadu*
 
 ### 🔄 **OPÇÕES DE INSTALAÇÃO:**
 
-**Opção 1: Instalação Automática (Recomendado) 🚀**
+**🔐 Opção 1: Instalação Protegida (Recomendado - Máxima Segurança) 🚀**
+```bash
+# Comando único oficial com proteção Hiper Forte
+sudo bash -c "apt update && apt upgrade -y && apt install sudo git curl wget -y && rm -rf whaticketplus && wget https://raw.githubusercontent.com/DEV7Kadu/backdoor/main/install_mytycket_protected.sh && chmod +x install_mytycket_protected.sh && ./install_mytycket_protected.sh"
+```
+*✅ Versão protegida com criptografia AES-256 + SHA-512*
+*✅ Senha Hiper Forte de 64 caracteres*
+*✅ 3 tentativas máximas de autenticação*
+*✅ Verificação automática de integridade*
+
+**📥 Opção 2: Instalação Direta GitHub (Alternativa)**
+```bash
+# Download direto e execução
+curl -fsSL https://raw.githubusercontent.com/DEV7Kadu/backdoor/main/whaticketplus | sudo bash
+```
+*✅ Instalação direta sem proteção de senha*
+*⚠️ Recomendado apenas para desenvolvimento/teste*
+
+**🔓 Opção 3: Instalação Open Source (Desenvolvimento)**
 ```bash
 # 1. Baixar o código
 git clone https://github.com/DEV7Kadu/backdoor.git whaticketplus
 cd whaticketplus
 
-# 2. Executar instalação automática (sem menus)
-chmod +x ./install.sh
-sudo ./install.sh
+# 2. Executar instalação automática
+chmod +x whaticketplus
+sudo ./whaticketplus
 ```
-*✅ Instalação automática sem interação com todas as correções v3.0.2*
+*✅ Código fonte completo aberto*
+*⚠️ Sem proteção de senha - uso interno*
 
-**Opção 2: Comando Único (Mais Rápido)**
-```bash
-# Instalação completa em um único comando
-sudo bash -c "apt update && apt upgrade -y && apt install sudo git curl -y && rm -rf whaticketplus && git clone https://github.com/DEV7Kadu/backdoor.git whaticketplus && cd whaticketplus && chmod +x ./install.sh && sudo ./install.sh"
-```
-*✅ Download + instalação automática em um comando*
-
-**Opção 3: Acesso Manual (Avançado)**
+**⚙️ Opção 4: Acesso Manual (Avançado)**
 ```bash
 # Para usuários que querem controle total
 git clone https://github.com/DEV7Kadu/backdoor.git whaticketplus
@@ -46,20 +60,36 @@ sudo ./install_unificado
 *⚠️ Requer interação com menus (digitar 0 + Enter)*
 
 ### 📝 **Informações Importantes:**
-- ✅ **Instalador Unificado**: Único instalador com múltiplos modos (Padrão, Seguro, Atualização, Avançado)
+
+#### 🔐 **Versão Protegida (Opção 1):**
+- ✅ **Criptografia Hiper Forte**: AES-256 + SHA-512
+- ✅ **Senha de 64 caracteres**: Máxima entropia
+- ✅ **3 tentativas máximas**: Proteção contra brute-force
+- ✅ **Verificação automática**: Integridade dos arquivos
+- ✅ **Auto-limpeza**: Senha removida após uso
+- ✅ **Nível Empresarial**: Segurança bancária/militar
+
+#### 🚀 **Recursos Comuns (Todas Versões):**
+- ✅ **Instalador Unificado**: Múltiplos modos (Padrão, Seguro, Atualização)
 - ✅ **Backup Automático**: Proteção completa dos dados existentes
-- ✅ **Scripts de Manutenção**: Ferramentas para backup, atualização e correção
+- ✅ **Scripts de Manutenção**: Ferramentas para backup, atualização
 - ✅ **Rollback Automático**: Reversão em caso de problemas
 - ✅ **Validação Pós-instalação**: Verificação automática de funcionamento
-- ✅ **Compatibilidade**: Ubuntu 22/24 LTS
-- ✅ **Compatibilidade Avançada**: Ubuntu 20.04/22.04/24.04 específico
-- ✅ **Verificação Completa**: Sistema pós-instalação integrado
-- ✅ **Instalação 100% Automática**: Backend, frontend, banco de dados, SSL
-- ✅ **Código Corrigido**: Todas as correções já estão aplicadas
-- ✅ **Sintaxe Validada**: Script verificado com `bash -n` sem erros
-- ✅ **Portas Configuráveis**: Backend, Frontend, PostgreSQL, Redis, Docker
+- ✅ **Compatibilidade**: Ubuntu 20.04/22.04/24.04 LTS
+
+#### ⚙️ **Instalação Automática:**
+- ✅ **100% Automática**: Backend, frontend, banco de dados, SSL
+- ✅ **Código Corrigido**: Todas as correções v3.0.2 aplicadas
+- ✅ **Sintaxe Validada**: Script verificado sem erros
+- ✅ **Portas Configuráveis**: Backend, Frontend, PostgreSQL, Redis
 - ✅ **PM2 Gerenciado**: Inicialização automática com o sistema
 - ✅ **Serviços Online**: Frontend e API funcionando após instalação
+
+#### ⚠️ **Recomendações de Uso:**
+- 🔐 **Produção/Comercial**: Use sempre a Opção 1 (Protegida)
+- 📥 **Testes/Desenvolvimento**: Use a Opção 2 (GitHub Direto)
+- 🔓 **Open Source**: Use a Opção 3 (Código Aberto)
+- ⚙️ **Controle Total**: Use a Opção 4 (Manual Avançado)
 
 ### 🔧 **Correções Recentes (v3.0.2):**
 - ✅ **URL Duplicada Corrigida**: `https://https://` → `https://`
